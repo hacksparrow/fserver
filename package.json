@@ -1,0 +1,32 @@
+{
+  "name": "fserver",
+  "version": "0.0.0",
+  "description": "File server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hacksparrow/fserver.git"
+  },
+  "keywords": [
+    "file",
+    "file",
+    "server",
+    "server"
+  ],
+  "author": "Hage Yaapa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hacksparrow/fserver/issues"
+  },
+  "homepage": "https://github.com/hacksparrow/fserver",
+  "dependencies": {
+    "express": "^4.8.7"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  }
+}
