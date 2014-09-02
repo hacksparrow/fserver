@@ -4,7 +4,8 @@ module.exports = function (referers) {
 
     return function (req, res, next) {
 
-        var referer = req.get('referer');
+        // referer domain
+        var referer = req.get('referer').split('/')[2];
 
         if ('whitelist' in referers && referers.whitelist.length) {
             if (referers.whitelist.indexOf(referer) > -1) { next(); }
