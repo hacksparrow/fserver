@@ -1,11 +1,23 @@
-var fserver = require('../');
-var config =  require('./config');
+var expect = require('chai').expect;
+var supertest = require('supertest');
 
-fserver.use(fserver.limiter(config.limits));
-fserver.use(fserver.referers(config.referers));
-fserver.use(fserver.ips(config.ips));
-fserver.use(fserver.files(config.directories));
+describe('files module', function () {
 
-fserver.listen(config.port, function () {
-    console.log('fserver listening on', config.port);
+
+    it('should serve files', function (done) {
+
+        var fserver = require('../');
+        var config =  require('./config');
+
+        fserver.use(fserver.referer(config.referers));
+        //fserver.use(fserver.limiter(config.limiter));
+        //fserver.use(fserver.ip(config.ips));
+        fserver.use(fserver.files(config.directories));
+
+        var request = supertest(fserver);
+        request.get('/files').expect(200);
+
+    })
+
+
 })

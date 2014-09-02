@@ -1,6 +1,6 @@
 {
   "name": "fserver",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "File server",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "chai": "^1.9.1",
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "supertest": "^0.13.0"
   }
 }

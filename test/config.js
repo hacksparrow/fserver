@@ -1,8 +1,11 @@
 
-module.exports = function () {
+module.exports = {
+
+    appDir: __dirname,
+    hostname: 'www.example.com',
 
     port: 9999,
-    directories: ['./files'],
+    directories: ['public'],
 
     referers: {
         whitelist: [], // can specify regexp patterns, if anything here, everything is blacklisted
