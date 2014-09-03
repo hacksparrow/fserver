@@ -1,7 +1,7 @@
 {
   "name": "fserver",
-  "version": "0.0.2",
-  "description": "File server",
+  "version": "0.0.3",
+  "description": "File server powered by Node.js",
   "main": "index.js",
   "scripts": {
     "test": "mocha test"
