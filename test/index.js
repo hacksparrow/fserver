@@ -3,7 +3,7 @@ var conf =  require('./config');
 
 // middleware
 fserver.use(fserver.referer(conf.referers));
-fserver.use(fserver.limiter(conf.limiter));
+fserver.use(fserver.limiter(conf.limits));
 fserver.use(fserver.ip(conf.ips));
 //fserver.use(fserver.serve(conf.directories));
 

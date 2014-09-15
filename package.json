@@ -1,6 +1,6 @@
 {
   "name": "fserver",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "File server powered by Node.js",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/hacksparrow/fserver",
   "dependencies": {
-    "express": "^4.8.7"
+    "express": "^4.9.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",

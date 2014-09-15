@@ -8,13 +8,13 @@ module.exports = {
     directories: ['public'],
 
     referers: {
-        whitelist: ['www.example.com'], // can specify regexp patterns, if anything here, everything is blacklisted
-        blacklist: [] // can specify regexp patterns
+        whitelist: ['www.example.com'],
+        blacklist: []
     },
 
     ips: {
-        whitelist: [], // can specify regexp patterns, if anything here, everything is blacklisted
-        blacklist: [] // can specify regexp patterns
+        whitelist: [],
+        blacklist: []
     },
 
     limits: {
